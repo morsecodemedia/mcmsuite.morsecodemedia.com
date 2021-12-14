@@ -1,18 +1,13 @@
 {
-  "name": "nuxt-template",
+  "name": "mcmsuite.morsecodemedia.com",
   "version": "1.0.0",
-  "description": "A template to start Nuxt projects, loaded with all the additional modules that are used in almost all of our projects.",
-  "author": "A morsecodemedia/tomasino project",
+  "description": "A centralized hub of all the tools that have been branded as the MCM Suite.",
+  "author": "A morsecodemedia project",
   "contributors": [
     {
       "name": "Brandon Morse",
       "email": "brandon@morsecodemedia.com",
       "url": "https://github.com/morsecodemedia"
-    },
-    {
-      "name": "James Tomasino",
-      "email": "james@tomasino.org",
-      "url": "https://github.com/jamestomasino"
     }
   ],
   "private": true,
