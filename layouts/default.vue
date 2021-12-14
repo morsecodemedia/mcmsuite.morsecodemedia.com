@@ -88,11 +88,11 @@ export default {
         { hid: 'ogdescription', property: 'og:description', content: '' },
         { hid: 'twdescription', name: 'twitter:description', content: '' },
         { hid: 'googledescription', itemprop: 'description', content: '' },
-        { hid: 'ogurl', property: 'og:url', content: 'https://www.domain.com/' + this.$route.path },
-        { hid: 'twsite', name: 'twitter:site', content: 'https://www.domain.com/' + this.$route.path }
+        { hid: 'ogurl', property: 'og:url', content: 'https://mcmsuite.morsecodemedia.com' + this.$route.path },
+        { hid: 'twsite', name: 'twitter:site', content: 'https://mcmsuite.morsecodemedia.com' + this.$route.path }
       ],
       link: [
-        { hid: 'canonical', rel: 'canonical', href: 'https://www.domain.com/' + this.$route.path }
+        { hid: 'canonical', rel: 'canonical', href: 'https://mcmsuite.morsecodemedia.com' + this.$route.path }
       ],
       bodyAttrs: {
         class: 'page-' + ((this.$route.path.length > 1) ? this.$route.path.slice(1).replace(new RegExp('/$'), '').replace(new RegExp('/', 'g'), '-') : 'home')
