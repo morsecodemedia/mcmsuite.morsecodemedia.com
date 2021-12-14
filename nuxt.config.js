@@ -56,7 +56,7 @@ export default {
     '@nuxtjs/redirect-module'
   ],
   sitemap: {
-    hostname: 'https://www.domain.com',
+    hostname: 'https://mcmsuite.morsecodemedia.com',
     gzip: true,
     trailingSlash: true,
     defaults: {
@@ -74,7 +74,7 @@ export default {
   },
   robots: {
     UserAgent: '*',
-    Sitemap: 'https://www.domain.com/sitemap.xml'
+    Sitemap: 'https://mcmsuite.morsecodemedia.com/sitemap.xml'
   },
   redirect: [],
   /*
