@@ -1,7 +1,10 @@
 <template>
-  <h1>
-    Hello World!
-  </h1>
+  <div>
+    <h1>
+      The MCM Suite of Tools
+    </h1>
+    <p>Doing the minimal amount of thinking so you can do even less.</p>
+  </div>
 </template>
 
 <script>
@@ -18,11 +21,11 @@ export default {
         { hid: 'ogdescription', property: 'og:description', content: '' },
         { hid: 'twdescription', name: 'twitter:description', content: '' },
         { hid: 'googledescription', itemprop: 'description', content: '' },
-        { hid: 'ogurl', property: 'og:url', content: 'https://www.domain.com' + this.$route.path },
-        { hid: 'twsite', name: 'twitter:site', content: 'https://www.domain.com' + this.$route.path }
+        { hid: 'ogurl', property: 'og:url', content: 'https:/mcmsuite.morsecodemedia.com' + this.$route.path },
+        { hid: 'twsite', name: 'twitter:site', content: 'https://mcmsuite.morsecodemedia.com' + this.$route.path }
       ],
       link: [
-        { hid: 'canonical', rel: 'canonical', href: 'https://www.domain.com' + this.$route.path }
+        { hid: 'canonical', rel: 'canonical', href: 'https://mcmsuite.morsecodemedia.com' + this.$route.path }
       ]
     }
   }
