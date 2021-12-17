@@ -4,9 +4,9 @@
       The MCM Suite of Tools
     </h1>
     <p>Doing the minimal amount of thinking so you can do even less.</p>
-    <div v-if="tools">
-      <div
-        v-for="(tool, index) in tools"
+    <section v-if="tools">
+      <article
+        v-for="(tool, index) in sortedTools(tools)"
         :key="index"
       >
         <h2>{{ tool.name }}</h2>
@@ -17,8 +17,8 @@
         >
           Use Tool
         </a>
-      </div>
-    </div>
+      </article>
+    </section>
   </div>
 </template>
 
@@ -61,6 +61,11 @@ export default {
       ]
     }
   },
+  methods: {
+    sortedTools: (arr) => {
+      return arr.sort((a, b) => (a.name > b.name) ? 1 : (a.name === b.name) ? ((a.url > b.url) ? 1 : -1) : -1)
+    }
+  },
   head () {
     return {
       title: '',
@@ -83,6 +88,57 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
 
+h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 24px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+a {
+  background: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: white;
+  display: inline-block;
+  font-size: 20px;
+  padding: 15px 25px;
+  text-decoration: none;
+  &:hover {
+    background: white;
+    color: black;
+    text-decoration: none;
+  }
+  &:focus {
+    background: white;
+    color: black;
+    text-decoration: none;
+    outline: 2px dotted black;
+  }
+}
+
+#main {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 15px 5%;
+}
+
+article {
+  border-top: 1px solid lightgrey;
+  padding: 35px 0;
+  height: 100%;
+  min-height: moz-available;
+  max-height: 80vh;
+  display: block;
+}
 </style>
