@@ -63,7 +63,7 @@ export default {
   },
   methods: {
     sortedTools: (arr) => {
-      return arr.sort((a, b) => (a.name > b.name) ? 1 : (a.name === b.name) ? ((a.url > b.url) ? 1 : -1) : -1)
+      return arr.slice().sort((a, b) => (a.name > b.name) ? 1 : (a.name === b.name) ? ((a.url > b.url) ? 1 : -1) : -1)
     }
   },
   head () {
