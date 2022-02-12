@@ -35,6 +35,12 @@ export default {
           image: ''
         },
         {
+          name: 'Color Palette',
+          description: 'An accessibility color contrast checker for all variations of a seven color, color palette. Basically the Color Contrast Checker on steroids.',
+          url: 'https://color-palette.morsecodemedia.com',
+          image: ''
+        },
+        {
           name: 'Meta Tags',
           description: 'A page to check character count and preview meta tags in various scenarios.',
           url: 'https://morse.sh/meta',
