@@ -63,6 +63,12 @@ export default {
           description: 'This site is a collection of checklists, guidelines, tutorials and other information gathered while studying for my IAAP Certified Professionals Accessibility Core Competencies (CPACC) certification.',
           url: 'https://morse.sh/a11y',
           image: ''
+        },
+        {
+          name: 'Veeva Certifications',
+          description: 'A study guide for the various Veeva certifications. Live search on questions, organized by exam.',
+          url: 'https://morse.sh/veevacerts',
+          image: ''
         }
       ]
     }
